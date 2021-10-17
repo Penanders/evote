@@ -5,7 +5,7 @@ if(in_array($priv, $access)){?>
 <h3><?php echo getLocalizedText("Create new user")?></h3>
 <hr>
 <div class="well" style="max-width: 400px">
-    <form action="/actions/useradminpagehandler.php" method="POST">
+    <form action="<?php echo PATH ?>actions/useradminpagehandler.php" method="POST">
     <div>
             <label><?php echo getLocalizedText("Username:")?></label>
             <input type="text" name="username" class="form-control" style="margin-bottom: 3px" autocomplete="off">

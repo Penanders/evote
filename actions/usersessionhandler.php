@@ -50,11 +50,11 @@ if(isset($_POST["button"])){
 				$redirect = "login";
 				break;
 		}
-		header("Location: /".$redirect);
+		header("Location: ".PATH.$redirect);
 
     }elseif($_POST["button"]=="logout"){
 		unset($_SESSION['user']);
-		header("Location: /vote");
+		header("Location: ".PATH);
     }
 }
 

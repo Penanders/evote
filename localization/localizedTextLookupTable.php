@@ -28,69 +28,69 @@ define("LOCALIZED_TEXT_LOOKUP_TABLE", array(
     // index.php
     "E-vote - Your digital voting system"=>array(
         "sv"=>"E-vote - Ditt digitala röstsystem",
-        "scanian"=>"E-vote - Ditt digitaula röestsystejm",
+        "it"=>"E-vote - Il tuo sistema di voto elettronico",
     ),
     "Voting page"=>array(
         "sv"=>"Röstningssida",
-        "scanian"=>"Röestningssiedah",
+        "it"=>"Pagina di voto",
     ),
     "Log in"=>array(
         "sv"=>"Logga in",
-        "scanian"=>"Låugga ejn",
+        "it"=>"Connessione",
     ),
     "Log out"=>array(
         "sv"=>"Logga ut",
-        "scanian"=>"Låugga ud",
+        "it"=>"Esci",
     ),
     "Election admin"=>array(
         "sv"=>"Valansvarig",
-        "scanian"=>"Vaulansvari'",
+        "it"=>"Amministratore Elezioni",
     ),
     "Adjuster"=>array(
         "sv"=>"Justerare",
-        "scanian"=>"Juesterareh"
+        "it"=>"Scrutatore"
     ),
     "Manage users"=>array(
         "sv"=>"Hantera användare",
-        "scanian"=>"Handskas mi anvendarna",
+        "it"=>"Gestisci Utenti",
     ),
     "Administrator"=>array(
         "sv"=>"Administratör",
-        "scanian"=>"Administrautör",
+        "it"=>"Amministratore",
     ),
     "E-vote must be configured"=>array(
         "sv"=>"E-vote måste konfigureras",
-        "scanian"=>"E-vote måeste konfigurearas",
+        "it"=>"E-vote deve essere configurato",
     ),
     // Footer
     "Created by Informationsutskottet at E-sektionen at TLTH"=>array(
         "sv"=>"Skapad av Informationsutskottet inom E-sektionen inom TLTH",
-        "scanian"=>"Skapad auv Infomationsutskottit inåm E-sektjonen inåm TLTH",
+        "it"=>"Created by Informationsutskottet",
     ),
     "E-vote is open and free software licensed under MPL-2.0. Source code can be found at"=>array(
         "sv"=>"E-vote är öppen och fri mjukvara licenserad under MPL-2.0. Källkod hittas på",
-        "scanian"=>"E-vote aer öppen o fri mjuekvaura lisensierad undår MPL-2.0. Källkåud hiddas po'",
+        "it"=>"E-vote is open and free software licensed under MPL-2.0. Source code can be found at",
     ),
     // install/setup.php
     "E-vote Setup"=>array(
         "sv"=>"E-vote Setup",
-        "scanian"=>"E-vote Setaup",
+        "it"=>"E-vote Setup",
     ),
     "Configuration successfull!"=>array(
         "sv"=>"Konfigurationen lyckades!",
-        "scanian"=>"Konfiguratjonen lyckades",
+        "it"=>"Configurazione completata",
     ),
     "An user with that name already exists in the database."=>array(
         "sv"=>"En avändare med det namnet fanns redan i databasen.",
-        "scanian"=>"Ejn anvendare mid de namnet fanns rejdan i dautabausen",
+        "it"=>"Un utente con questo nome esiste già nel database",
     ),
     "The passwords for superuser does not match. Try again."=>array(
         "sv"=>"Lösenorden för superuser stämmer inte överens. Försök igen.",
-        "scanian"=>"Löesenorden föer superuser är ente samma. Testa igjen.",
+        "it"=>"La password per supeuser non è corretta. Prova di nuovo.",
     ),
     "All fields not filled in"=>array(
         "sv"=>"Alla fällt är inte ifyllda.",
-        "scanian"=>"Alla fielt aer ente ijfyllda",
+        "it"=>"Non sono stati riempiti tutti i campi",
     ),
     // install/setup.php: Actual HTML seen by user
     "Hi! How fun that you want to start using E-vote.\n
@@ -101,594 +101,602 @@ define("LOCALIZED_TEXT_LOOKUP_TABLE", array(
         <br>\n
         <br> Fyll i datan som gäller för ditt system nedan för att konfigurera.\n
         <br> Se till att skriva in rätt värden för att inte behöva ändra dessa manuelt efteråt.",
-        "scanian"=>"Hallå! Vad skoej att juest nie vill böerja anvinda E-vote.\n
+        "it"=>"Salve. Ci fa piacere che tu stia iniziando ad usare E-Vote\n
         <br>\n
-        <br> Fyll i dautan föer ditt systejm naedan för att konfigurera.\n
-        <br> Se ti' att skriejva in rätt grejor föer att ente behöva fibbla med det manuellt sen.",
+        <br> Compila la form in conformità del tuo ambiente per configurare il software.\n
+        <br> Attenzione ad inserire i valori corretti in modo che non sia necessario modificarli manualmente in seguito.",        
     ),
     "Database configuration"=>array(
         "sv"=>"Databaskonfiguration",
-        "scanian"=>"Dautabauskonfiguration",
+        "it"=>"Configurazione database",
     ),
     "Host:"=>array(
         "sv"=>"Host:",
-        "scanian"=>"Host:",
+        "it"=>"Host:",
     ),
     "Database name:"=>array(
         "sv"=>"Databasnamn:",
-        "scanian"=>"Dautabausnamn:",
+        "it"=>"Nome Database:",
     ),
     "User:"=>array(
         "sv"=>"Användare:",
-        "scanian"=>"Anvendare:",
+        "it"=>"Utente:",
     ),
     "Password:"=>array(
         "sv"=>"Lösenord:",
-        "scanian"=>"Löesenord:",
+        "it"=>"Password:",
     ),
     "This is the user that has full control of the system. This user can't be deleted from the database."=>array(
         "sv"=>"Detta är användaren som har full kontrol på systemet. Denna användare kan inte raderas från databasen.",
-        "scanian"=>"Detta äer anvendaren som bestimmer över hela systemet. Den kan ente tas bort från dautabausen.",
+        "it"=>"Questo è l'utente che avrà il pieno controllo del sistema. Questo utente non potrà essere eliminato",
     ),
     "Name:"=>array(
         "sv"=>"Namn:",
-        "scanian"=>"Namn:",
+        "it"=>"Nome:",
     ),
     "Repeat password:"=>array(
         "sv"=>"Upprepa lösenord:",
-        "scanian"=>"Skriev det ijen så man veat att du kann:",
+        "it"=>"Reinserisci password:",
     ),
     "E-vote is configured!"=>array(
         "sv"=>"E-vote är konfigurerat!",
-        "scanian"=>"E-vote äer konfigurerat",
+        "it"=>"E-vote è configurato",
     ),
     // index/clear.php
     "Close current election"=>array(
         "sv"=>"Stäng nuvarande val",
-        "scanian"=>"Stäng det öppna vaulet",
+        "it"=>"Chiudi elezioni in corso",
     ),
     "Your password:"=>array(
         "sv"=>"Ditt lösenord:",
-        "scanian"=>"Ditt löesenord:",
+        "it"=>"La tua password:",
     ),
     "Delete election"=>array(
         "sv"=>"Radera val",
-        "scanian"=>"Ta bort vaul",
+        "it"=>"Cancella elezioni",
     ),
     // No permission
     "You don't have permission to view this page."=>array(
         "sv"=>"Du har inte behörighet att visa denna sida.",
-        "scanian"=>"Ditt ålahue du kan ente se denna sijdan.",
+        "it"=>"Non hai permessi sufficienti per vedere questa pagina.",
     ),
     // install/vote/front.php
     "There is currently no election session."=>array(
         "sv"=>"Det finns inget pågående val för tillfället.",
-        "scanian"=>"Det finns inge' vaul just nue.",
+        "it"=>"Non è presente nessuna sessione elezioni.",
     ),
     "Checking for new election round in"=>array(
         "sv"=>"Kollar efter ny omröstning om",
-        "scanian"=>"Kållar efter ny omröestning om",
+        "it"=>"Controllo nuova sessione elezioni",
     ),
     "Oops! Could not check for new election round. Try refreshing the page!"=>array(
         "sv"=>"Hoppsan! Kunde inte kolla efter ny omröstning. Testa att ladda om sidan!",
-        "scanian"=>"Faen! Kunde ente se om de fanns en ny omröestning. Testa ladda om sijdan!",
+        "it"=>"Faen! Kunde ente se om de fanns en ny omröestning. Testa ladda om sijdan!",
     ),
     "Refresh Page"=>array(
         "sv"=>"Ladda om sidan",
-        "scanian"=>"Ladda om sijdan",
+        "it"=>"Ladda om sijdan",
     ),
     "There is nothing to vote on currently. Take a cookie."=>array(
         "sv"=>"Det finns inget att rösta på för tillfället. Ta en kaka.",
-        "scanian"=>"Det finns inge' att röesta po' just nue. Ta ejn spiddekauga. "
+        "it"=>"Attualmente non vi sono elezioni in corso."
     ),
     "Voting in progress"=>array(
         "sv"=>"Röstning pågår",
-        "scanian"=>"Röestning påugåur",
+        "it"=>"Votazione in corso",
     ),
     // These two are a bit iffy, since we need to insert a number in the middle.
     // Check the source file for help how to do this properly in your language
     "You can vote on <b>"=>array(
         "sv"=>"Du får rösta på <b>",
-        "scanian"=>"Due fåur rösta po' <b>",
+        "it"=>"Puoi votare su una <b>",
     ),
     "</b> of the alternatives"=>array(
         "sv"=>"</b> av alternativen",
-        "scanian"=>"</b> auv aelternatijven.",
+        "it"=>"</b> delle seguenti alternative.",
     ),
     // end of iffy things (for now)
     "Personal code:"=>array(
         "sv"=>"Personlig valkod:",
-        "scanian"=>"Pärsonlig vaulkåd:",
+        "it"=>"Codice personale:",
     ),
     "Temporary code:"=>array(
         "sv"=>"Tillfällig valkod:",
-        "scanian"=>"Ti'fälli' vaulkåd:",
+        "it"=>"Codice temporaneo:",
     ),
     "Vote!"=>array(
         "sv"=>"Rösta!",
-        "scanian"=>"Röesta!",
+        "it"=>"Votare",
     ),
     // index/useradmin/useradminpanel.php
     "Choose"=>array(
         "sv"=>"Välj",
-        "scanian"=>"Väelj",
+        "it"=>"Scelta",
     ),
     "Name"=>array(
         "sv"=>"Namn",
-        "scanian"=>"Namn",
+        "it"=>"Nome",
     ),
     "Privileges"=>array(
         "sv"=>"Privilegier",
-        "scanian"=>"Pri'velejor",
+        "it"=>"Diritti",
     ),
     "Remove selected users"=>array(
         "sv"=>"Ta bort markerade användare",
-        "scanian"=>"Tau bort ikryssad anvendare",
+        "it"=>"Elimina l'utente selezionato",
     ),
     // index/useradmin/newuser.php
     "Create new user"=>array(
         "sv"=>"Skapa ny användare",
-        "scanian"=>"Skaupa ny anvendare",
+        "it"=>"Crea nuovo utente",
     ),
     "Username:"=>array(
         "sv"=>"Användarnamn:",
-        "scanian"=>"Anvindarnamn:",
+        "it"=>"Utente:",
     ),
     "Privileges:"=>array(
         "sv"=>"Privilegier:",
-        "scanian"=>"Pri'velejor:",
+        "it"=>"Diritti:",
     ),
     // index/useradmin/changepassword.php
     "Change password"=>array(
         "sv"=>"Ändra lösenord",
-        "scanian"=>"Endra löesenord",
+        "it"=>"Modifica password",
     ),
     "New password:"=>array(
         "sv"=>"Nytt lösenord:",
-        "scanian"=>"Nytt löesenord:",
+        "it"=>"Nuova password:",
     ),
     "Are you sure you want to log out?"=>array(
         "sv"=>"Är du säker på att du vill logga ut?",
-        "scanian"=>"Äer due sääker po' att du ska logga ud?",
+        "it"=>"Conferma disconnessione",
     ),
     // index/electionadmin/electionadminpanel.php
     "Some shady character has done something with the database."=>array(
         "sv"=>"Någon fuling har mixtrat i databasen.",
-        "scanian"=>"Nåen fubbick har fulat saj i dautabausen",
+        "it"=>"Alcuni caratteri sospetti hanno causato problemi al database",
     ),
     "There is no ongoing election session."=>array(
         "sv"=>"Det pågår inget valtillfälle.",
-        "scanian"=>"De påugåur enget vaultillfelle",
+        "it"=>"Non ci sono elezioni programmate",
     ),
     "Create new election round"=>array(
         "sv"=>"Skapa ny valomgång",
-        "scanian"=>"Skaupa ny vaulomgong",
+        "it"=>"Creare nuova sessione elezioni",
     ),
     "What to be elected:"=>array(
         "sv"=>"Vad som ska väljas:",
-        "scanian"=>"Vaud som ska' veljas:",
+        "it"=>"Oggetto dell'elezione:",
     ),
     "Number of selectable options:"=>array(
         "sv"=>"Antal valbara alternativ:",
-        "scanian"=>"Antaul vaulbaura alternatejv:",
+        "it"=>"Numero di opzioni selezionabili:",
     ),
     "Alternatives:"=>array(
         "sv"=>"Alternativ:",
-        "scanian"=>"Alertnatejv:",
+        "it"=>"Alternative:",
     ),
     "Increase/decrease number of fields:"=>array(
         "sv"=>"Öka/minska antalet fält:",
-        "scanian"=>"Öga/mijnska antaulet fielt:",
+        "it"=>"Aumenta diminuisci numero di campi:",
     ),
     "Start new election round"=>array(
         "sv"=>"Starta ny valomgång",
-        "scanian"=>"Staurta ny vaulomgong",
+        "it"=>"Inizia nuova sessione elezioni",
     ),
     "Previous election round"=>array(
         "sv"=>"Föregående valomgång",
-        "scanian"=>"Förra vaulomgongen",
+        "it"=>"Precedente sessione elettorale",
     ),
     "End election round"=>array(
         "sv"=>"Avsluta valomgång",
-        "scanian"=>"Auvsluda vaulomgongen",
+        "it"=>"Fine sessione elettorale",
     ),
     // index/classes/TableGenerator.php
     "votes"=>array(
         "sv"=>"röster",
-        "scanian"=>"röestor"
+        "it"=>"voti"
     ),
     "opt."=>array(
         "sv"=>"alt.",
-        "scanian"=>"alt.",
+        "it"=>"opz.",
     ),
     "Number of failed voting attempts:"=>array(
         "sv"=>"Antal misslyckade röstningsförsök",
-        "scanian"=>"Nummer fejlade röestningsförsög",
+        "it"=>"Tentativi di voto falliti:",
     ),
     "Relationship between total votes accepted and failed voting attempts (lower is better):"=>array(
         "sv"=>"Förhållande mellan totalt antal accepterade röster och misslyckade röstningsförsök (lägre är bättre):",
-        "scanian"=>"Föerhållaneh millan totault nummer okej röester o' fejlade röestningsförsög (mindre er biddre):",
-    ),
+        "it"=>"Rapporto tra il totale dei voti accettati e falliti (minore è meglio):",
+    ),	 
     "Nothing has been elected yet"=>array(
         "sv"=>"Ingenting har valts ännu",
-        "scanian"=>"Engenting haur vaulds enn",
+        "it"=>"Le votazioni sono in attesa di risultato",
     ),
     "No election opportunity in sight"=>array(
         "sv"=>"Inget valtillfälle i sikte",
-        "scanian"=>"Jaug ser inge vaultillfielle",
+        "it"=>"Al momento non sono previste votazioni",
     ),
     "Opened"=>array(
         "sv"=>"Öppnad",
-        "scanian"=>"Öeppnad",
+        "it"=>"Aperta",
     ),
     "Closed"=>array(
         "sv"=>"Stängd",
-        "scanian"=>"Stingd",
+        "it"=>"Chiusa",
     ),
     // index/classes/MenuGenerator.php
     "Administrate election"=>array(
         "sv"=>"Administrera val",
-        "scanian"=>"Styer över vaul",
+        "it"=>"Gestire le votazioni",
     ),
     "See previous rounds"=>array(
         "sv"=>"Se tidigare omgångar",
-        "scanian"=>"Se tidigare omgångar",
+        "it"=>"Vedere precedenti votazioni",
     ),
     "See previous round"=>array(
         "sv"=>"Se föregående omgång",
-        "scanian"=>"Se föregående omgång",
+        "it"=>"Vedere precedente votazione",
     ),
     "See all rounds"=>array(
         "sv"=>"Se alla omgångar",
-        "scanian"=>"Se alla omgångar",
+        "it"=>"Vedi tutte le votazioni",
     ),
     "New user"=>array(
         "sv"=>"Ny användare",
-        "scanian"=>"Ny anvendare",
+        "it"=>"Nuovo utente",
     ),
     "Manage election session"=>array(
         "sv"=>"Hantera valtillfälle",
-        "scanian"=>"Hannteara vaultillfielle",
+        "it"=>"Gestisci sessione elettorale",
     ),
     "Usage history"=>array(
         "sv"=>"Användningshistorik",
-        "scanian"=>"Anvindningshisstårik",
+        "it"=>"Cronologia d'uso",
     ),
     // index/admin/electionControl.php
     "Create new election"=>array(
         "sv"=>"Skapa nytt val",
-        "scanian"=>"Skaupa nytt vaul",
+        "it"=>"Creare nuova elezione",
     ),
     "Name of election:"=>array(
         "sv"=>"Namn på val:",
-        "scanian"=>"Namn po' vaul",
+        "it"=>"Nome dell'elezione",
     ),
     "Max number of people:"=>array(
         "sv"=>"Max antal personer:",
-        "scanian"=>"Max antal personor:",
+        "it"=>"Numero massimo di persone:",
     ),
     "Receive codes in CSV-format (for distance voting)"=>array(
         "sv"=>"Få koder i CSV-format (för distanstörstning)",
-        "scanian"=>"Fåuh kåder i CSV-formaud (föer distansröestning)",
+        "it"=>"Ricevere i codici in formato CSV (per il voto a distanza)",
     ),
     "Create"=>array(
         "sv"=>"Skapa",
-        "scanian"=>"Skaupa",
+        "it"=>"Creare",
     ),
     "A new election has been created!"=>array(
         "sv"=>"Ett nytt val har skapats!",
-        "scanian"=>"Ett nydd vaul haur skaupadts!",
+        "it"=>"E' stata creata una nuova elezione",
     ),
     "Close current election"=>array(
         "sv"=>"Stäng nuvarande val",
-        "scanian"=>"Stieng vaulet som é nue",
+        "it"=>"Chiudi elezione corrente",
     ),
     "Close election"=>array(
         "sv"=>"Stäng val",
-        "scanian"=>"Stieng vaul"
+        "it"=>"Chiudi elezione"
     ),
     "Previous election rounds"=>array(
         "sv"=>"Tidigare valomgångar",
-        "scanian"=>"Tiddigare vaulomgongar",
+        "it"=>"Precedenti sessioni elettorali",
     ),
     // actions/votingspagehandler.php
     "You have not selected anything to vote on"=>array(
         "sv"=>"Du har inte valt någon att rösta på",
-        "scanian"=>"Du haur ente vault nån att röesta po'",
+        "it"=>"Non è stata selezionata nessuna opzione di voto",
     ),
     "The election round you are trying to vote on has already ended. The page has been refreshed so you can try again"=>array(
         "sv"=>"Den valomgång du försöker rösta på har redan avslutats. Sidan har nu uppdaterats så du kan försöka igen",
-        "scanian"=>"Den vaulomgongen due föersööker röesta po' haur rejdan avsludads. Sijdan haur nue oppdaterats såe due kan testa ijen",
+        "it"=>"La sessione elettorale per cui stai tentando di votare risulta chiusa. La pagina è stata aggiornata così potrai provare nuovamente.",
     ),
     "You are not allowed to pick too many candidates"=>array(
         "sv"=>"Du får inte välja för många kandidater",
-        "scanian"=>"Due fåur ente vilja för många kandidator",
+        "it"=>"Ridurre il numero delle opzioni votate",
     ),
     "You have not entered any personal code"=>array(
         "sv"=>"Du har inte angett någon personlig valkod",
-        "scanian"=>"Due har ente gett nån personlig vaulkåd",
+        "it"=>"Non è stato inserito alcune codice personale",
     ),
     "You have not entered any temporary code"=>array(
         "sv"=>"Du har inte angett någon tillfällig valkod",
-        "scanian"=>"Due haur ente gett nån tillfälli' vaulkåd",
+        "it"=>"Non è stato inserito alcun codice temporaneo",
     ),
     "The election round has already been terminated"=>array(
         "sv"=>"Valomgången har redan avslutats",
-        "scanian"=>"Vaulomgongen haur rejdan auvsludats",
+        "it"=>"La sessione elettorale risulta già terminata",
     ),
     "Your vote has been registered"=>array(
         "sv"=>"Din röst har blivit registrerad",
-        "scanian"=>"Dien röest haur blivid registrerad",
+        "it"=>"Il tuo voto è stato registrato",
     ),
     "Your vote was not registered. This can depend on you entering one of the codes wrong, or because you already have voted"=>array(
         "sv"=>"Din röst blev inte registrerad. Detta kan bero på att du skrev in någon av koderna fel eller att du redan röstat",
-        "scanian"=>"Dien röst blejv ente registrerad. Det kan bero po' att du skrejv in nån av kåderna fejl ellor för att due rejdan röstat. Fubbik."
+        "it"=>"Il tuo voto non è stato registrato. Questo può accadere perché hai inserito dei codici errati, oppure perché hai già votato"
     ),
     // actions/usersessionhandler.php
     "You have not entered any username"=>array(
         "sv"=>"Du har inte skrivit in något användarnamn",
-        "scanian"=>"Due har ente skrivit in nått användarnamn",
+        "it"=>"Non è stato inserito il nome utente",
     ),
     "You have not entered any password"=>array(
         "sv"=>"Du har inte angett något lösenord",
-        "scanian"=>"Due haur ente angett nått löesenord",
+        "it"=>"Non è stata digitata la password",
     ),
     "The username and/or the password is wrong"=>array(
         "sv"=>"Användarnamet och/eller lösenordet är fel",
-        "scanian"=>"Anvendarnamnet og/ellor löesenordet é fejl",
+        "it"=>"Il nome utente e/o la password sono errati",
     ),
     "One or more of the fields were empty"=>array(
         "sv"=>"Något av fälten var tomma",
-        "scanian"=>"Nått av fielten va' tomma",
+        "it"=>"Uno o più campi risultano non compilati",
     ),
     "The username you entered already exists"=>array(
         "sv"=>"Användarnamnet du angav finns redan",
-        "scanian"=>"Anvendarnamnet due gauv finns rejdan",
+        "it"=>"Anvendarnamnet due gauv finns rejdan",
     ),
     "The password has been changed"=>array(
         "sv"=>"Lösenordet är bytt",
-        "scanian"=>"Löesenordet é bytat",   // First actual translation is "bytt" -> "bytat"
+        "it"=>"Löesenordet é bytat",   // First actual translation is "bytt" -> "bytat"
     ),
     "A new user has been created"=>array(
         "sv"=>"En ny användare har skapats",
-        "scanian"=>"En ny anvendare haur skapats",
+        "it"=>"E' stato creato un nuovo utente",
     ),
     "User deleted"=>array(
         "sv"=>"Användaren raderades",
-        "scanian"=>"Anvendaren tos bort",
+        "it"=>"Utente elimnato",
     ),
     "You have not chosen any users to delete"=>array(
         "sv"=>"Du har inte valt några användare att radera",
-        "scanian"=>"Due haur ente vault nån anvendare att tau bort",
+        "it"=>"Non è stato scelto alcune utente da eliminare",
     ),
     // actions/genlastresult.php
     "Please wait. Voting in progress."=>array(
         "sv"=>"Var vänlig vänta. Röstning pågår.",
-        "scanian"=>"Venta föer faen. Just nue röestas det.",
+        "it"=>"Attendere. Votazione in corso",
     ),
     // actions/electionadminpagehandler.php
     "You have not entered what to be elected"=>array(
         "sv"=>"Du har inte angett vad som ska väljas",
-        "scanian"=>"Due haur ente sagt vaud som ska veljas",
+        "it"=>"Non è stato inserito l'eggetto della votazione",
     ),
     "You have not entered how many one can vote on"=>array(
         "sv"=>"Du har inte angett hur många man får rösta på",
-        "scanian"=>"Due haur ente sagt huer många man får röesta po'",
+        "it"=>"Non è stato inserito il numero massimo di voti per votante",
     ),
     "An election is already in progress"=>array(
         "sv"=>"En valomgång är redan igång",
-        "scanian"=>"Ejn vaulomgong é rejdan igång",
+        "it"=>"Ejn vaulomgong é rejdan igång",
     ),
     "You must enter at least two candidates"=>array(
         "sv"=>"Du måste ange minst två kandidater",
-        "scanian"=>"Due måste ange minst tvåu kandidautor",
+        "it"=>"E' necessario inserire almeno due candidati",
     ),
     "A new election round has begun"=>array(
         "sv"=>"En ny valomgång har börjat",
-        "scanian"=>"Ejn ny vaulomgong haur startat'",
+        "it"=>"Ejn ny vaulomgong haur startat'",
     ),
     // actions/csvcodesend.php
     "Personal code"=>array(
         "sv"=>"Personlig valkod",
-        "scanian"=>"Personli' vaulkåd",
+        "it"=>"Codice personale",
     ),
     "Boo! You are not allowed to do that."=>array(
         "sv"=>"Fy! Så får du inte göra.",
-        "scanian"=>"Nej för faen! Såu fåur du ente göra.",
+        "it"=>"Azione non consentita",
     ),
     // actions/codeprint.php
     "E-vote, E-sektionen's voting system"=>array(
         "sv"=>"E-vote, E-sektionens röstningssystem",
-        "scanian"=>"E-vote, E-sektionens röestningsystejm",
+        "it"=>"E-vote, Sistema di voto delle sezioni",
     ),
     "Your personal code is"=>array(
         "sv"=>"Din personliga valkod är",
-        "scanian"=>"Dijn personliga vaulkåd é",
+        "it"=>"Il tuo codice personale è",
     ),
     // actions/adminpagehandler.php
     "You have not entered a name for the election"=>array(
         "sv"=>"Du har inte angett något namn på valet",
-        "scanian"=>"Due haur ente sagt nått namn po' vaulet",
+        "it"=>"Non è stato dato il nome alle elezioni",
     ),
     "You have not entered the max number of people"=>array(
         "sv"=>"Du har inte angett det maximala antalet personer",
-        "scanian"=>"Due haur ente sagt max folk",
+        "it"=>"Non è stato indicato il numero massimo di persone",
     ),
     "There is already an election in progress"=>array(
         "sv"=>"Det pågår redan ett val",
-        "scanian"=>"Det påugåur redan ett vaul",
+        "it"=>"C'è già una votazione in corso",
     ),
     "The election is now closed"=>array(
         "sv"=>"Valet är nu stängt",
-        "scanian"=>"Vaulet é stängt nue",
+        "it"=>"Le elezioni sono chiuse",
     ),
     "Wrong username and/or password somewhere"=>array(
         "sv"=>"Fel lösenord och/eller användarnamn någonstans",
-        "scanian"=>"Fejl löesenord og/ellor anvendarnamn nånstans",
+        "it"=>"Username e/o Password errati",
     ),
     // data/RandomInfo.php
     // Success array
     "*Happy trumpet fanfare*"=>array(
         "sv"=>"*Glad trumpetfanfar*",
-        "scanian"=>"*Glaud trumpetfanfar*",
+        "it"=>"*Glaud trumpetfanfar*",
+        "it"=>"*Glaud trumpetfanfar*",
     ),
     "You're the best!"=>array(
         "sv"=>"Du är bäst!",
-        "scanian"=>"Due é en päärla",
+        "it"=>"Due é en päärla",
+        "it"=>"Due é en päärla",
     ),
     "You know this!"=>array(
         "sv"=>"Du kan det här!",
         "scanan"=>"Du fattar det här!",
+        "scanan"=>"Du fattar det här!",
     ),
     "Splendid!"=>array(
         "sv"=>"Kanon!",
-        "scanian"=>"Redigt bra!",
+        "it"=>"Redigt bra!",
+        "it"=>"Redigt bra!",
     ),
     "You are unreasonably good at this!"=>array(
         "sv"=>"Du är orimligt duktig på det här!",
-        "scanian"=>"Due é sinnessjukt brau på detta!",
+        "it"=>"Due é sinnessjukt brau på detta!",
+        "it"=>"Due é sinnessjukt brau på detta!",
     ),
     "Cool!"=>array(
-        "sv"=>"Coolt!",
-        "scanian"=>"Ballt!",
+        "sv"=>"Fico!",
+        "it"=>"Ballt!",
+        "it"=>"Ballt!",
     ),
     "Ja!"=>array( // this one is the other way around
         "sv"=>"Yes!",
-        "scanian"=>"Oui!",
+        "it"=>"Oui!",
+        "it"=>"Sìììì!",
     ),
     "What a talent!"=>array(
         "sv"=>"Vilken talang!",
-        "scanian"=>"Som en äkta MFF:are!", // #mestamästarna
+        "it"=>"Che talento!", // #mestamästarna
     ),
     "You did it!"=>array(
         "sv"=>"Du lyckades!",
-        "scanian"=>"Due gjoerde ente fejl!",
+        "it"=>"Due gjoerde ente fejl!",
+        "it"=>"Due gjoerde ente fejl!",
     ),
     "Very niice!"=>array(
         "sv"=>"Kalasbra!",
-        "scanian"=>"Riiktigt brau!",
+        "it"=>"Riiktigt brau!",
+        "it"=>"Riiktigt brau!",
     ),
     "Immense happiness!"=>array(
         "sv"=>"Ofantlig lycka!",
-        "scanian"=>"Jäevligt glatt!",
+        "it"=>"Jäevligt glatt!",
+        "it"=>"Jäevligt glatt!",
     ),
     "Really good!"=>array(
         "sv"=>"Toppenbra!",
-        "scanian"=>"Dejlig!",
+        "it"=>"Dejlig!",
+        "it"=>"Dejlig!",
     ),
     "Yup!"=>array(
         "sv"=>"Jajamensan!",
-        "scanian"=>"Jaddå!",
+        "it"=>"Jaddå!",
+        "it"=>"Jaddå!",
     ),
     "Look at them skillz!"=>array(
         "sv"=>"Look at dem skillz!",
-        "scanian"=>"Kålla in skillzen!",
+        "it"=>"Kålla in skillzen!",
+        "it"=>"Kålla in skillzen!",
     ),
     "You got some MAD voting skills!"=>array(
         "sv"=>"You got some MAD voting skills!",
-        "scanian"=>"You gått såm MAD voting skills!",
+        "it"=>"You gått såm MAD voting skills!",
+        "it"=>"You gått såm MAD voting skills!",
     ),
     "Your degree of being good is high!"=>array(
         "sv"=>"Din duktighetsgrad är hög!",
-        "scanian"=>"Due é en Skåuning i själen!",
+        "it"=>"Due é en Skåuning i själen!",
+        "it"=>"Due é en Skåuning i själen!",
     ),
     "Fantastic!"=>array(
         "sv"=>"Fantastiskt!",
-        "scanian"=>"Fantastiiskt!",
+        "it"=>"Fantastiiskt!",
+        "it"=>"Fantastiiskt!",
     ),
     "Truly great!"=>array(
         "sv"=>"Storartat!",
-        "scanian"=>"Som en skåunsk såmmardaug!",
+        "it"=>"Som en skåunsk såmmardaug!",
+        "it"=>"Som en skåunsk såmmardaug!",
     ),
     "Phenomenal!"=>array(
         "sv"=>"Fenomenalt!",
-        "scanian"=>"Fenåmenault!",
+        "it"=>"Fenåmenault!",
+        "it"=>"Fenåmenault!",
     ),
     "Outstanding!"=>array(
         "sv"=>"Enastående!",
-        "scanian"=>"En po' miljonen!",
+        "it"=>"En po' miljonen!",
+        "it"=>"En po' miljonen!",
     ),
     "Formidable!"=>array(
         "sv"=>"Formidabelt!",
-        "scanian"=>"Stabilare änn Hallandsåsen!",
+        "it"=>"Stabilare änn Hallandsåsen!",
+        "it"=>"Stabilare änn Hallandsåsen!",
     ),
     "Brilliant!"=>array(
         "sv"=>"Strålande!",
-        "scanian"=>"Stråulande!",
+        "it"=>"Brillante!",
     ),
     "Magnificent!"=>array(
         "sv"=>"Magnifikt!",
-        "scanian"=>"Maxat!",
+        "it"=>"Magnifico!"
     ),
     "Excellent!"=>array(
         "sv"=>"Förträffligt!",
-        "scanian"=>"Redit'!",
+        "it"=>"Ottimo'!",
     ),
     "Noice!"=>array(
-        "sv"=>"Smäckert!",
-        "scanian"=>"Naaajs",
+        "sv"=>"Gustoso!",
+
     ),
     "Real tough!"=>array(
         "sv"=>"Tufft!",
-        "scanian"=>"Tuff!",
     ),
     // ...
     "You get an A in Usage of E-vote!"=>array(
         "sv"=>"Du får en 5:a i användning av E-vote",
-        "scanian"=>"Due fåur en fimma i att anvenda E-vote",
     ),
     "You are so good!"=>array(
         "sv"=>"Du är underbart duktig!",
-        "scanian"=>"Due röestar som en riktig skåuning!",
     ),
     "YEAH!"=>array(
         "sv"=>"GÖTTANS",
-        "scanian"=>"GÖTT",
+        "it"=>"GÖTT",
     ),
     // Error array
     "Something went wrong."=>array(
         "sv"=>"Något gick fel.",
-        "scanian"=>"Nått funkade ente",
+        "it"=>"Errore",
     ),
     "Ouch!"=>array(
         "sv"=>"Ajdå!",
-        "scanian"=>"Ajdåeh!",
     ),
     "Oof!"=>array(
         "sv"=>"Attans!",
-        "scanian"=>"Faen osså",
     ),
     "Whoops!"=>array(
         "sv"=>"Whoops!",
-        "scanian"=>"Whoops!",
     ),
     "Nooo!"=>array(
         "sv"=>"Naj!",
-        "scanian"=>"*stockholmska* Åh neeeej",
     ),
     "Oopsie!"=>array(
         "sv"=>"Hoppsan!",
-        "scanian"=>"Ålarens!",
     ),
     "Gosh darn it"=>array(
         "sv"=>"Rackarns!",
-        "scanian"=>"Föer i hilvede!",
+        "it"=>"Föer i hilvede!",
     ),
     "Nails!"=>array(
         "sv"=>"Järnspikar!",
-        "scanian"=>"De vau ju själva faen!",
     ),
     "Frick!"=>array(
         "sv"=>"Sablarns!",
-        "scanian"=>"Fubbik!",
     ),
     "What the frick?!"=>array(
         "sv"=>"Attans järnspikar!",
-        "scanian"=>"Stockholm osså!",
     ),
     "Whuuupps!"=>array(
         "sv"=>"Whuuupps!",
-        "scanian"=>"Ente Guld o gröna skogar!",
     ),
 )
 );

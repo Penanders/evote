@@ -13,7 +13,7 @@ if(in_array($priv, $access)){
     	<hr>
     	<div class="well" style="max-width: 400px">
 			<div id="new-election-form">
-				<form action="/actions/adminpagehandler.php" method="POST">
+				<form action="<?php echo PATH ?>actions/adminpagehandler.php" method="POST">
 					<div class="form-group">
 							<label for="vn"><?php echo getLocalizedText("Name of election:")?></label>
 							<input type="text" name="valnamn" class="form-control" id="vn" autocomplete="off">
@@ -47,7 +47,7 @@ if(in_array($priv, $access)){
         <h3><?php echo getLocalizedText("Close current election")?></h3>
     	<hr>
     	<div class="well" style="max-width: 400px">
-    		<form action="/actions/adminpagehandler.php" method="POST">
+    		<form action="<?php echo PATH ?>actions/adminpagehandler.php" method="POST">
     			<div class="form-group">
             		<label for="psw1"><?php echo getLocalizedText("Your password:")?></label>
             		<input type="password" name="pswuser" class="form-control" id="psw1">

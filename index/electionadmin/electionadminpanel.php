@@ -21,7 +21,7 @@ if(!$ongoingSession){ ?>
 		<hr>
 		<div class="well" style="max-width: 400px">
 		<div class=\"panel panel-default">
-	        <form action="/actions/electionadminpagehandler.php" method="POST">
+	        <form action="<?php echo PATH ?>actions/electionadminpagehandler.php" method="POST">
 	        <div class="form-group">
 	                <label><?php echo getLocalizedText("What to be elected:")?></label>
 	                <input type="text" class="form-control" name="round_name" autocomplete="off" maxlength="240">
@@ -96,7 +96,7 @@ if(!$ongoingSession){ ?>
 
 		echo "</div>";
 		echo "<div class=\"span7 text-center\">";
-		echo "<form action=/actions/electionadminpagehandler.php method=\"POST\">";
+		echo "<form action=\"".PATH."actions/electionadminpagehandler.php\" method=\"POST\">";
 		echo "<button type=\"submit\" class=\"btn btn-primary\" name=\"button\" value=\"end_round\">".getLocalizedText("End election round")."</button>";
 		echo "</form>";
 		echo "</div>";

@@ -9,7 +9,7 @@ if(in_array($evote->getPrivilege($_SESSION["user"]), $access)){
 	</div>
 	<br>
 	<div style="max-width: 400px">
-		<form action="/actions/electionadminpagehandler.php" method="POST">
+		<form action="<?php echo PATH ?>actions/electionadminpagehandler.php" method="POST">
 			<div class="form-group">
         <label for="psw1"><?php echo getLocalizedText("Your password:")?></label>
         <input type="password" name="pswuser" class="form-control" id="psw1">

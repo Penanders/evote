@@ -3,6 +3,7 @@
 function decode_str($string){
 	return iconv('UTF-8', 'windows-1252', $string);
 }
+$lang = $_SESSION["lang"];
 if($evote->verifyUser($_SESSION["user"], 0)){
 
 	require("../fpdf/fpdf.php");
@@ -12,11 +13,11 @@ if($evote->verifyUser($_SESSION["user"], 0)){
 
 	$count = 0;
 	$instr_per_page = 3;
-	$instructions = decode_str(file_get_contents(__DIR__."/../data/code_instr.txt"));
+	$instructions = decode_str(file_get_contents(__DIR__."/../data/code_instr_".$lang.".txt"));
 	foreach($codes as $c){
 		$count ++;
 		$pdf->SetFont('Courier','B',16);
-		$title = decode_str(getLocalizedText("E-vote, E-sektionen's voting system")." ".$_SERVER['SERVER_NAME']);
+		$title = decode_str(getLocalizedText("E-vote, E-sektionen's voting system")." ".PATH);
 		$pdf->Ln();
 		$pdf->Cell(190,10,$title);
 		$pdf->Ln();

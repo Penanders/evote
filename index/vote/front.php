@@ -1,5 +1,5 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="js/countdown.js"></script>
+<script src="<?php echo PATH ?>js/countdown.js"></script>
 <style>
 tr.alternative:hover {
     background-color: rgb(245, 245, 245);
@@ -19,7 +19,7 @@ if(!$evote->ongoingSession()){
 			<p><h5><?php echo getLocalizedText("Oops! Could not check for new election round. Try refreshing the page!")?></h5></p>
 			<button class="btn-lg btn-primary" onClick="window.location.reload();"><?php echo getLocalizedText("Refresh Page")?></button>
 		</div>
-		<script src="js/checkForNewRound.js"></script>
+		<script src="<?php echo PATH ?>js/checkForNewRound.js"></script>
 	<?php
 }else{
 	$ongoing = $evote->ongoingRound();
@@ -36,12 +36,12 @@ if(!$evote->ongoingSession()){
 			<p><h4><?php echo getLocalizedText("Oops! Could not check for new election round. Try refreshing the page!")?></h4></p>
 			<button class="btn-lg btn-primary" onClick="window.location.reload();"><?php echo getLocalizedText("Refresh Page")?></button>
 		</div>
-		<script src="js/checkForNewRound.js"></script>
+		<script src="<?php echo PATH ?>js/checkForNewRound.js"></script>
 		<?php
 	} else{
 			?>
 			<!-- Countdown timer for rechecking if round open -->
-			<script src="js/checkIfRoundClosed.js"></script>
+			<script src="<?php echo PATH ?>js/checkIfRoundClosed.js"></script>
 			<?php
             $res = $evote->getOptions();
             if($res->num_rows > 0){
@@ -55,7 +55,7 @@ if(!$evote->ongoingSession()){
 					echo "<h4>".getLocalizedText("You can vote on <b>").$max.getLocalizedText("</b> of the alternatives")."</h4>";
 				echo "</div>";
 				?>
-	    	    <form action="/actions/votingpagehandler.php" method="POST" autocomplete="off">
+	    	    <form action="<?php echo PATH ?>actions/votingpagehandler.php" method="POST" autocomplete="off">
 	    	        <?php
                         $head = "";
 						$type = "checkbox";
@@ -105,7 +105,7 @@ if(!$evote->ongoingSession()){
 					</script>
 	    	        <div class="form-group">
 	    	            <label><?php echo getLocalizedText("Personal code:")?></label>
-	    	            <input type="password" class="form-control" name="code1">
+	    	            <input type="text" class="form-control" name="code1">
 	    	        </div>
 	    	        <div class="form-group">
 	    	            <label><?php echo getLocalizedText("Temporary code:")?></label>

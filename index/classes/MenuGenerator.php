@@ -14,9 +14,9 @@ class MenuGenerator {
         }
         //$activate[$activeTab] = "active";
         echo "<ul class=\"nav nav-tabs\">";
-            echo "<li class=\"$activate[0]\"><a href=\"/electionadmin/control\">".getLocalizedText("Administrate election")."</a></li>";
+            echo "<li class=\"$activate[0]\"><a href=\"".PATH."electionadmin/control\">".getLocalizedText("Administrate election")."</a></li>";
             if($ongoingS){
-                echo "<li class=\"$activate[1]\"><a href=\"/electionadmin/stat\">".getLocalizedText("See previous rounds")."</a></li>";
+                echo "<li class=\"$activate[1]\"><a href=\"".PATH."electionadmin/stat\">".getLocalizedText("See previous rounds")."</a></li>";
                 //echo "<li class=\"$activate[2]\"><a href=\"/clear\">Stäng nuvarande val</a></li>";
             }
 
@@ -32,8 +32,8 @@ class MenuGenerator {
             default: $activate[0] ='active';
         }
         echo "<ul class=\"nav nav-tabs\">";
-            echo "<li class=\"$activate[0]\"><a href=\"/adjust/adjustpanel\">".getLocalizedText("See previous round")."</a></li>";
-            echo "<li class=\"$activate[1]\"><a href=\"/adjust/stat\">".getLocalizedText("See all rounds")."</a></li>";
+            echo "<li class=\"$activate[0]\"><a href=\"".PATH."adjust/adjustpanel\">".getLocalizedText("See previous round")."</a></li>";
+            echo "<li class=\"$activate[1]\"><a href=\"".PATH."adjust/stat\">".getLocalizedText("See all rounds")."</a></li>";
 
         echo "</ul>";
     }
@@ -49,9 +49,9 @@ class MenuGenerator {
             default: $activate[0] ='active';
         }
         echo "<ul class=\"nav nav-tabs\">";
-            echo "<li class=\"$activate[0]\"><a href=\"/useradmin/handleusers\">".getLocalizedText("Manage users")."</a></li>";
-            echo "<li class=\"$activate[1]\"><a href=\"/useradmin/newuser\">".getLocalizedText("New user")."</a></li>";
-            echo "<li class=\"$activate[2]\"><a href=\"/useradmin/changepassword\">".getLocalizedText("Change password")."</a></li>";
+            echo "<li class=\"$activate[0]\"><a href=\"".PATH."useradmin/handleusers\">".getLocalizedText("Manage users")."</a></li>";
+            echo "<li class=\"$activate[1]\"><a href=\"".PATH."useradmin/newuser\">".getLocalizedText("New user")."</a></li>";
+            echo "<li class=\"$activate[2]\"><a href=\"".PATH."useradmin/changepassword\">".getLocalizedText("Change password")."</a></li>";
 
         echo "</ul>";
     }
@@ -67,8 +67,8 @@ class MenuGenerator {
             default: $activate[0] ='active';
         }
         echo "<ul class=\"nav nav-tabs\">";
-            echo "<li class=\"$activate[0]\"><a href=\"/adminmain/info\">Information</a></li>";
-            echo "<li class=\"$activate[1]\"><a href=\"/adminmain/electioncontrol\">".getLocalizedText("Manage election session")."</a></li>";
+            echo "<li class=\"$activate[0]\"><a href=\"".PATH."adminmain/info\">Information</a></li>";
+            echo "<li class=\"$activate[1]\"><a href=\"".PATH."adminmain/electioncontrol\">".getLocalizedText("Manage election session")."</a></li>";
             //echo "<li class=\"$activate[2]\"><a href=\"/adminmain/settings\">Inställningar</a></li>";
 
         echo "</ul>";

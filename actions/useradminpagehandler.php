@@ -31,7 +31,7 @@ if(in_array($priv, $access)){
                 $dialogue->appendMessage(getLocalizedText('The password has been changed'), 'success');
             }
             $_SESSION['message'] = serialize($dialogue);
-            header('Location: /useradmin/changepassword');
+            header('Location: '.PATH.'useradmin/changepassword');
         } elseif ($_POST['button'] == 'new') {
             $dialogue = new dialogue();
             $input_ok = true;
@@ -52,7 +52,7 @@ if(in_array($priv, $access)){
                 $dialogue->appendMessage(getLocalizedText('A new user has been created'), 'success');
             }
             $_SESSION['message'] = serialize($dialogue);
-            header('Location: /useradmin/newuser');
+            header('Location: '.PATH.'useradmin/newuser');
 
 
         } elseif ($_POST['button'] == 'delete_users') {
@@ -68,7 +68,7 @@ if(in_array($priv, $access)){
             }
 
             $_SESSION['message'] = serialize($dialogue);
-            header('Location: /useradmin');
+            header('Location: '.PATH.'useradmin');
         }
     }
 }

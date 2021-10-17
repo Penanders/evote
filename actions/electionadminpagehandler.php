@@ -59,10 +59,10 @@ if(in_array($priv, $access)){
             }
             $_SESSION['message'] = serialize($dialogue);
                     //header("HTTP/1.1 301 Moved Permanently");
-            header('Location: /electionadmin');
+            header('Location: '.PATH.'electionadmin');
         } elseif ($_POST['button'] == 'end_round') { # END ELECTION BUTTON
                     $evote->endRound();
-            header('Location: /electionadmin');
+            header('Location: '.PATH.'electionadmin');
         } 
     }
 }

@@ -43,7 +43,7 @@ if(in_array($priv, $access)){
                 }
             } else {
                 $_SESSION['message'] = serialize($dialogue);
-                header('Location: /adminmain/electioncontrol');
+                header('Location: '.PATH.'adminmain/electioncontrol');
             }
         } elseif ($_POST['button'] == 'delete_election') { # Remove-election button
             $dialogue = new Dialogue();
@@ -66,7 +66,7 @@ if(in_array($priv, $access)){
                 }
             }
             $_SESSION['message'] = serialize($dialogue);
-            header('Location: /adminmain');
+            header('Location: '.PATH.'adminmain');
         }
     }
 }

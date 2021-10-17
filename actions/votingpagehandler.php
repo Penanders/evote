@@ -50,6 +50,6 @@ if (isset($_POST['button'])) {
         }
 
         $_SESSION['message'] = serialize($dialogue);
-        header('Location: /vote');
+        header('Location: '.PATH.'vote');
     }
 }

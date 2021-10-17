@@ -23,11 +23,11 @@ $randomString = new RandomInfo();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="<?php echo PATH ?>favicon.ico" type="image/x-icon" />
 
     <!-- Bootstrap core CSS -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/evote.css" rel="stylesheet">
+    <link href="<?php echo PATH ?>css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo PATH ?>css/evote.css" rel="stylesheet">
 </head>
 
 <body>
@@ -37,16 +37,19 @@ $randomString = new RandomInfo();
             <div class="col-md-4">
                 <div class="logo">
                     <!--<div><h3><span class="label label-info">E-vote - Ditt digitala röstsystem</span></h3></div> -->
-					<img src="/logo.jpg" />
+					<img src="<?php echo PATH ?>logo.jpg" />
                 </div>
             </div>
             <!-- Language options -->
-            <div class="col-md-4 col-sm-8 navbar-text" style="float: right; text-align: right;">
+				<div class="col-md-4 col-sm-8 navbar-text" style="float: right; text-align: right;">
+            <!-- No Language options
                 <h4>
-                    <a href="#" onclick="addURLParameter('lang', 'sv')">🇸🇪 Svenska</a> | <a href="#" onclick="addURLParameter('lang', 'en')">🇬🇧 English</a> | <a href='#' onclick="addURLParameter('lang', 'scanian')">❤️💛 Skånska</a>
+                    <a href="#" onclick="addURLParameter('lang', 'sv')">🇸🇪 Svenska</a> | <a href="#" onclick="addURLParameter('lang', 'en')">🇬🇧 English</a> | <a href='#' onclick="addURLParameter('lang', 'it')">🇮🇹 Italiano</a>
                 </h4>
+					 No Language options -->
                 <!-- Add language URL parameter -->
-                <script>
+                <!-- No Language options
+					 <script>
                 function addURLParameter(name, value) {
                     window.location.href = updateQueryStringParameter(window.location.href, name, value);
                 }
@@ -58,11 +61,16 @@ $randomString = new RandomInfo();
                         return uri.replace(re, '$1' + key + "=" + value + '$2');
                     }
                     else {
-                        return uri + "/" + separator + key + "=" + value;
+                        //return uri + "/" + separator + key + "=" + value;
+                        return uri + separator + key + "=" + value;
                     }
                 }
                 </script>
-            </div>
+			   No Language options -->
+               <h4>
+                 Elezione Organi Collegiali
+               </h4>
+				</div>
         </div>
 
 
@@ -75,7 +83,7 @@ $randomString = new RandomInfo();
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="/">
+                    <a class="navbar-brand" href="<?php echo PATH ?>">
                         <span>E-vote</span>
                     </a>
                     </div>
@@ -92,21 +100,21 @@ $randomString = new RandomInfo();
             <ul class="nav nav-sidebar">
                 <?php
                 if (true) {
-                    echo "<li><a href=\"/vote\">".getLocalizedText("Voting page")."</a></li>";
+                    echo "<li><a href=\"".PATH."vote\">".getLocalizedText("Voting page")."</a></li>";
                     echo "<li class=\"nav-header disabled\"><a><hr class=sidebarruler></a></li>";
                     if (!isset($_SESSION['user'])) {
-                        echo '<li><a href="/login">'.getLocalizedText("Log in").'</a></li>';
+                        echo '<li><a href="'.PATH.'login">'.getLocalizedText("Log in").'</a></li>';
                     } else {
                         $priv = $evote->getPrivilege($_SESSION['user']);
                         if ($priv == 1) {
-                            echo '<li><a href="/electionadmin">'.getLocalizedText("Election admin").'</a></li>';
+                            echo '<li><a href="'.PATH.'electionadmin">'.getLocalizedText("Election admin").'</a></li>';
                         } elseif ($priv == 2) {
-                            echo '<li><a href="/adjust">'.getLocalizedText("Adjuster").'</a></li>';
+                            echo '<li><a href="'.PATH.'adjust">'.getLocalizedText("Adjuster").'</a></li>';
                         } elseif ($priv == 0) {
-                            echo '<li><a href="/useradmin">'.getLocalizedText("Manage users").'</a></li>';
-                            echo '<li><a href="/adminmain">'.getLocalizedText("Administrator").'</a></li>';
+                            echo '<li><a href="'.PATH.'useradmin">'.getLocalizedText("Manage users").'</a></li>';
+                            echo '<li><a href="'.PATH.'adminmain">'.getLocalizedText("Administrator").'</a></li>';
                         }
-                        echo '<li><a href="/logout">'.getLocalizedText("Log out").'</a></li>';
+                        echo '<li><a href="'.PATH.'logout">'.getLocalizedText("Log out").'</a></li>';
                     }
                 }
                 ?>
@@ -126,19 +134,20 @@ $randomString = new RandomInfo();
     }
 
 
-    $page = trim($_SERVER['REQUEST_URI'], '/');
+    //$page = trim($_SERVER['REQUEST_URI'], '/');
     $tr = trim($_SERVER['REQUEST_URI'], '/');
     $nav = explode('/',$tr);
 
     $module = '';
     $page = '';
-    if(isset($nav[0])){
-        $module = $nav[0];
+	 if(isset($nav[1])){
+        $module = $nav[1];
     }
-    if(isset($nav[1])){
-        $page = $nav[1];
+    if(isset($nav[2])){
+        $page = $nav[2];
     }
     $configured = file_exists('data/config.php');
+
     if(!$configured){
         echo '<h4>'.getLocalizedText("E-vote must be configured").'</h4>';
     }elseif($module == 'vote'){
@@ -211,7 +220,7 @@ $randomString = new RandomInfo();
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="/js/bootstrap.min.js"></script>
+    <script src="<?php echo PATH ?>js/bootstrap.min.js"></script>
 
     <!-- Footer -->
     <footer class="text-center col-sm-offset-3">
